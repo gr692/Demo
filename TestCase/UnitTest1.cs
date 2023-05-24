@@ -38,7 +38,7 @@ public class Tests
     }
     
     [Test]
-    public void Test2()
+    public void Test2() // Проверка на разницу в количестве между startTimes и durations
     {
         TimeSpan[] startTimes = 
         {
@@ -75,7 +75,7 @@ public class Tests
     }
     
     [Test]
-    public void Test3()
+    public void Test3() // Проверка на отрицательное время во времени консультации
     {
         TimeSpan[] startTimes = 
         {
@@ -111,7 +111,7 @@ public class Tests
         Assert.Fail();
     }    
     [Test]
-    public void Test4()
+    public void Test4() // Проверка на раннее завершение рабочего времени относительно начального времени
     {
         TimeSpan[] startTimes = 
         {
@@ -130,8 +130,8 @@ public class Tests
             10,
         };
 
-        TimeSpan endWorkingTime = new TimeSpan(8, 0, 0);
         TimeSpan beginWorkingTime = new TimeSpan(18, 0, 0);
+        TimeSpan endWorkingTime = new TimeSpan(8, 0, 0);
         int consultationTime = 30;
 
         try
