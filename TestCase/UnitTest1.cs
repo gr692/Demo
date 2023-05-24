@@ -9,7 +9,7 @@ public class Tests
     }
 
     [Test]
-    public void Test1()
+    public void TestWorking()  //проверка алгоритма на работу
     {
         TimeSpan[] startTimes = 
         {
